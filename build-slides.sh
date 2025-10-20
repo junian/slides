@@ -16,11 +16,11 @@ npx @marp-team/marp-cli@latest "$SOURCE_DIR/**/*.md"
 
 # Move generated .html files into dist/
 find "$SOURCE_DIR" -type f -name "*.html" | while IFS= read -r htmlfile; do
-  # relpath e.g. "talks/oop.html" or "index.html" or "lectures/index.html"
+  # relpath e.g. "talks/slide.html" or "index.html" or "lectures/index.html"
   relpath="${htmlfile#"$SOURCE_DIR"/}"
   dir="$(dirname "$relpath")"           # e.g. "talks" or "." for root
-  base="$(basename "$relpath")"         # e.g. "oop.html"
-  name="${base%.html}"                  # e.g. "oop" or "index"
+  base="$(basename "$relpath")"         # e.g. "slide.html"
+  name="${base%.html}"                  # e.g. "slide" or "index"
 
   # normalize dir: if it's "." then make it empty
   if [ "$dir" = "." ]; then
