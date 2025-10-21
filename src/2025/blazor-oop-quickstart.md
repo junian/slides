@@ -27,6 +27,15 @@ with the Object-Oriented Programming principle (kind of)
 
 ---
 
+## Resources Needed
+
+- [GitHub Account](https://github.com/)
+- ⁠Download + Install [.NET SDK 9.0](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+- ⁠Download + Install [JetBrains Rider](https://www.jetbrains.com/rider/)
+- [Fluent UI Reference](https://www.fluentui-blazor.net/)
+
+---
+
 ## Blazor WASM + Fluent UI
 
 Dependencies:
